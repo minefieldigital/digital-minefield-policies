@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OAuth Callback</title>
+</head>
+<body style="font-family: monospace; padding: 2rem;">
+<p>Authorization complete. Copy the <code>code</code> value below (or from the URL bar) and return to your terminal.</p>
+<pre id="out" style="white-space: pre-wrap; word-break: break-all; background: #eee; padding: 1rem;"></pre>
+<script>
+document.getElementById('out').textContent = window.location.search || window.location.hash || '(no query string received)';
+</script>
+</body>
+</html>
